@@ -1,0 +1,28 @@
+body
+{
+    background: #333;
+}
+.box
+{
+    background: white;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation-name: key;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes key
+{
+    0%{background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+    25%
+    {background-color: blue; left: 300px; top:0px; border-radius: 50% 0 0 0;} 
+    50%{background-color: tomato; left:300px ;top: 400px; border-radius: 50% 50% 0 0;  }
+    75%
+    {
+        background-color: orange; top: 400px; left: 0px; border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: white; left: 0; top: 0; border-radius: 50%;
+    }
+}
